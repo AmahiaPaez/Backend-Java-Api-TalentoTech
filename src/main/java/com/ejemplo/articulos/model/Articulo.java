@@ -1,10 +1,14 @@
 package com.ejemplo.articulos.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "articulo")
-public class Producto {
+public class Articulo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,9 +17,9 @@ public class Producto {
     private String nombre;
     private Double precio;
 
-    public Producto() {}
+    public Articulo() {}
 
-    public Producto(Long id, String nombre, Double precio) {
+    public Articulo(Long id, String nombre, Double precio) {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;

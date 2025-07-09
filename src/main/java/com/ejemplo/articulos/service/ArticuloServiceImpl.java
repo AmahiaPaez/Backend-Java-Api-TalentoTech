@@ -5,11 +5,10 @@ import com.ejemplo.articulos.model.Articulo;
 import com.ejemplo.articulos.repository.ArticuloRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 
-@Service // Marca la clase como servicio de Spring
+@Service 
 public class ArticuloServiceImpl implements ArticuloService {
 
     private final ArticuloRepository articuloRepository;
